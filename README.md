@@ -1,2 +1,4 @@
 # Curso-code-the-future-SKA-
-Tarefas do curso Code The Future, incluindo os figmas e códigos do projeto final, além dos conteúdos desenvolvidos em aula
+Tarefas e projetos desenvolvidos durante o curso [Code The Future - SKA Senac](https://github.com/CodeTheFuture-SKA-Senac).
+
+Inclui figmas, códigos do projeto final e atividades realizadas em aula.
