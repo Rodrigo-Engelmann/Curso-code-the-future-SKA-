@@ -1,0 +1,72 @@
+<div class="terminal-container">
+ 
+    <div class="status-bar" [style.background-color]="productionStatus.color">
+        <span>{{productionStatus.status}}</span>
+    </div>
+           
+    <div class="terminal-div">
+        <div class="item-infos">
+            <span class="title-style">Item em produção: {{productionOrder.value}}</span>
+           
+           
+           <div class="item-content">
+             <img [src]="productionOrder.productImage" (click)="openImage(productionOrder.productImage)"/>
+ 
+                <div class="item-description">
+                    <div>
+                        <span class="item-title-description">Ordem de produção: </span>
+                        <span>{{productionOrder.key}}</span>
+                    </div>
+ 
+                    <div class="production-item-information">
+                    <div class="production-item">
+                        <span class="item-title-description"> Cor do produto: </span>
+                        <span>{{productionOrder.color}}</span>
+                    </div>
+ 
+                    <div class="item-color" [style.background-color]="OrderColors_e[productionOrder.color]"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="divider"></div>
+     <div class="item-infos" [ngStyle]="disabledStyle">
+        <span class="title-style">Quantidade de itens</span>
+ 
+        <div class="production-infos">
+            <app-production-control
+             [title]="'Produzido'"
+ 
+            [icon]="'TbCircleCheckFilled'"
+            [productionOrderQuantity]="productionOrder.quantity"
+            [productionStatus]="productionStatus"
+            [productionOrderKey]="productionOrder.key"
+ 
+            ></app-production-control>
+ 
+            <app-production-control
+            [title]="'Rejeitado'"
+ 
+            [icon]="'TbCircleXFilled'"
+            [productionOrderQuantity]="productionOrder.quantity"
+            [productionStatus]="productionStatus"
+            [productionOrderKey]="productionOrder.key"
+ 
+            ></app-production-control>
+        </div>
+     </div>
+ 
+</div>
+ 
+    <div class="action-buttons">
+        <button mat-button class="stop-button" [disabled]="productionStatus.status === ProductionStatus_e.WaitingProduction" (click)="setStopType()">Parada</button>
+        <button mat-button class="production-button" (click)="setProductionOrder()">Produção</button>
+ 
+ 
+    </div>  
+ 
+    <div class="footer">
+        footer
+    </div>
+ 
+</div>
