@@ -1,0 +1,99 @@
+<mat-accordion>
+  <mat-expansion-panel hideToggle>
+    <mat-expansion-panel-header class="expansionPanelHeader">
+        <div class="mat-expansion-panel-info-container in-progress-title">
+            <mat-panel-title> Em Progresso </mat-panel-title>
+        </div>
+        <div class="mat-expansion-panel-info-container tasks-percentage-container">
+            <div class="progress-bars-border footer-progress-bars bar1-container" [style.--bar-color]="getColorPercent(value)">
+
+                <mat-progress-bar class="progress-bars bar1" mode="determinate" 
+                  [value]="value" 
+                  [style.--bar-color]="getColorPercent(value)" 
+                  [style.--bar-border]="getBorderRadius(value)"
+                ></mat-progress-bar>
+                
+                <div class="progress-text" 
+                  [style.--progressText-left]="getProgressTextLeftValue(value)"
+                  [style.--progressText-color]="getProgressTextColor(value)"
+                >
+                  {{ value }}%
+                </div>
+
+            </div>
+            <mat-icon class="expandMore-icon mouse-animation-G">expand_more</mat-icon>
+        </div>
+    </mat-expansion-panel-header>
+      <div class="expansion-panel-container">
+        <!-- aqui vai o conteúdo do footer, quando ele abrir -->
+        <div class="in-progress-container">
+
+          <div class="inProgress-task-row1 small-side-margin">
+            <div>
+              <h2 class="inProgress-task-title">{{inProgressTask.title}}</h2>
+              <p class="inProgress-task-date">{{inProgressTask.term}}</p>
+            </div>
+
+            <div class="inProgress-task-btn">
+              <div class="inProgress-cancel-btn inProgress-task-buttons mouse-animation-G"><mat-icon class="inprogress-btns">close_small</mat-icon></div>
+              <div class="inProgress-ok-btn inProgress-task-buttons mouse-animation-G"><mat-icon class="inprogress-btns">check_small</mat-icon></div>
+            </div>
+          </div>
+
+          <div class="inProgress-task-info-container small-side-margin">
+            <img class="inProgress-exibition-image" [src]="inProgressTask.image" alt="Imagem representativa da atividade em progresso"> 
+
+            <div class="inProgress-task-description">
+              <p class="inProgress-task-mainText">{{inProgressTask.description}}</p>
+
+              <div class="inpectionNames-table">
+                <div class="inspectionNames-row1 inspectionNames-rows">
+                  <p class="consultores-text">Consultores</p>
+                  <p class="Aprovadores-text">Aprovadores</p>
+                </div>
+
+                <div class="inspectionNames-row2 inspectionNames-rows">
+                  <p class="consultoresNames-text">{{inProgressTask.consultants}}</p>
+                  <p class="AprovadoresNames-text">{{inProgressTask.approvers}}</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="main-tasks-percentage">
+
+
+          <div class="team-tasks-percentage">
+            <p class="tasks-count">6/20 Tarefas do documento</p>
+          </div>
+
+
+          <div class="personal-tasks-percentage">
+            <div class="progress-bars-border footer-progress-bars personal-bar-border" [style.--bar-color]="getColorPercent(personalValue)">
+              <mat-progress-bar class="progress-bars bar2" 
+                mode="determinate" 
+                [value]="personalValue" 
+                [style.--bar-color]="getColorPercent(personalValue)"
+              ></mat-progress-bar>
+              
+              <div class="progress-text" 
+                [style.--progressText-left]="getProgressTextLeftValue(personalValue)"
+                [style.--progressText-color]="getProgressTextColor(personalValue)"
+              >
+                {{ personalValue }}%
+              </div>
+
+            </div>
+            <p class="tasks-count personal-tasks-count">10/20 Tarefas pessoais</p>
+          </div>
+
+
+        </div>
+      </div>
+
+  </mat-expansion-panel>
+</mat-accordion>
+

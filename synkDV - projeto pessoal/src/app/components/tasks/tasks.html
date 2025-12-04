@@ -1,0 +1,99 @@
+<!-- header: inclui o sistema de mudança de páginas de tasks -->
+<header>
+    <!-- Sistema de info + edição de página: logo, editar, ajuda e perfil -->
+    <div class="taskPage-header side-padding">
+        <div class="taskPage-info">
+            <img class="synkdv-logo mouse-animation" src="assets/images/synkdv-logo.png" (click)="logoNavigate()" alt="logo do synkdv">
+            <h2 class="page-root">Tarefas primárias / Programação</h2>
+        </div>
+
+        <div class="taskPage-info">
+            <p class="header-button mouse-animation">Editar</p>
+            <p class="header-button mouse-animation">Ajuda</p>
+            <img class="profile-picture mouse-animation" 
+                [src]="profile_picture" 
+                alt="foto de perfil"
+                [matMenuTriggerFor]="menu"
+            >
+
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item (click)="Configuracoes()">
+                    <mat-icon>settings</mat-icon>
+                    Configurações
+                </button>
+                <button mat-menu-item (click)="Logout()">
+                    <mat-icon>logout</mat-icon>
+                    Logout
+                </button>
+            </mat-menu>
+        </div>
+    </div>
+
+    <!-- Sistema de páginas + search/filters -->
+    <div class="search-header side-padding">
+        <div class="taskPages-tabIcons">
+            <mat-icon class="add-taskPage mouse-animation-G header-icons">add</mat-icon>
+            <mat-icon class="taskPage-shortcut mouse-animation-G header-icons" [matMenuTriggerFor]="tabMenu">menu</mat-icon>
+
+            <mat-menu #tabMenu="matMenu">
+                <button mat-menu-item *ngFor="let tab of tabs">
+                    <mat-icon>shortcut</mat-icon>
+                    {{tab.title}}
+                </button>
+            </mat-menu>
+        </div>
+
+        <div class="taskPages-tabContainer modern-scroll">
+            <nav class="tab-container" *ngFor="let tab of tabs">
+                <!-- página de tarefas -->
+                <div class="task-tab tabs">
+                    <p>{{tab.title}}</p>
+                </div>
+
+                <!-- páginas de correção de bugs -->
+                <div class="bug-tab tabs">
+                    <p>Bugs</p>
+                </div>
+            </nav>
+        </div>
+
+        <div class="searchInput-container">
+            <div class="search-n-filter">
+                <mat-icon class="filter-icon mouse-animation-G header-icons" >filter_list</mat-icon>
+                <div id="inputSpace" class="searchTransition" [ngClass]="isOpen ? 'space-open' : 'space-close'"></div>
+                <mat-icon class="search-icon mouse-animation-G header-icons" (click)="toggleSearch()">search</mat-icon>
+                <!-- <mat-icon class="mouse-animation-G header-icons">tune</mat-icon> -->
+            </div>
+            <span id="search-input-line" class="searchTransition" [ngClass]="isOpen ? 'line-open' : 'line-close'"></span>
+
+            <mat-form-field id="search-input" appearance="outline">
+                <mat-label id="search-label">Pesquisar...</mat-label>
+                <input id="search-input-text" matInput placeholder="Digite algo...">
+            </mat-form-field>
+
+        </div>
+    </div>
+</header>
+
+<main class="modern-scroll">
+    <app-card 
+        *ngFor="let milestone of milestones"
+        [milestone]="milestone"
+    >
+    </app-card>
+
+
+    <div class="create-column-container">
+        <div class="create-column-group">
+            <mat-icon class="create-column-icon">add_circle_outline</mat-icon>
+            <h2>Criar Coluna</h2>
+        </div>
+    </div>
+</main>
+
+<!-- footer: inclui a tarefa em progresso + barra de progresso linear -->
+<footer class="main-footer">
+
+    <app-tasks-footer></app-tasks-footer>
+
+</footer>

@@ -1,0 +1,11 @@
+<div class="overlay" *ngIf="show" (click)="handleClose()"></div>
+
+<div class="popup" *ngIf="show">
+  <!-- Conteúdo personalizado fica aqui -->
+  <ng-content></ng-content>
+
+  <div class="actions">
+    <button *ngIf="confirmBtn" mat-raised-button color="primary" type="submit" (click)="handleConfirm()">Confirmar</button>
+    <button mat-raised-button color="primary" (click)="handleClose()">Fechar</button>
+  </div>
+</div>

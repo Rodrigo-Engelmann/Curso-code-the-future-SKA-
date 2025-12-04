@@ -1,0 +1,58 @@
+.image-small {
+    width: 22px;
+    height: 22px;
+}
+
+.image-medium {
+    width: 30px;
+    height: 30px;
+}
+
+.image-large-xx {
+    width: 35px;
+    height: 35px;
+}
+
+
+.ImgFooter {
+    background-color: var(--icons-color);
+    mask: url(assets/images/ska_footer.svg) no-repeat center / contain;
+    -webkit-mask: url(assets/images/ska_footer.svg) no-repeat center / contain;
+}
+
+
+.TbSailBoat {
+    background-color: var(--icons-color);
+    mask: url(assets/icons/TbSailboat.svg) no-repeat center / contain;
+    -webkit-mask: url(assets/icons/TbSailboat.svg) no-repeat center / contain;
+}
+
+
+
+.TbPlane {
+    background-color: var(--icons-color);
+    mask: url(assets/icons/TbPlane.svg) no-repeat center / contain;
+    -webkit-mask: url(assets/icons/TbPlane.svg) no-repeat center / contain;
+}
+
+
+.TbCircleCheckFilled {
+    background-color: var(--icons-color);
+    mask: url(assets/icons/TbCircleCheckFilled.svg) no-repeat center / contain;
+    -webkit-mask: url(assets/icons/TbCircleCheckFilled.svg) no-repeat center / contain;
+}
+
+
+
+.TbCircleXFiled {
+    background-color: var(--icons-color);
+    mask: url(assets/icons/TbCircleXFilled.svg) no-repeat center / contain;
+    -webkit-mask: url(assets/icons/TbCircleXFilled.svg) no-repeat center / contain;
+}
+
+
+.IconBack {
+    //background-color: var(--icons-color);
+    //mask: url(assets/icons/TbCircleXFilled.svg) no-repeat center / contain;
+    //-webit-mask: url(assets/icons/TbCircleXFilled.svg) no-repeat center / contain;
+}

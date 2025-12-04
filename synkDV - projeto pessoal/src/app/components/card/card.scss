@@ -1,0 +1,370 @@
+.small-side-padding {
+    max-width: calc(100% - 10px);
+    max-height: calc(100% - 10px);
+    padding: 5px;
+}
+
+
+
+
+.mouse-animation:hover{
+    transform:scale(1.03);
+
+    cursor: pointer;
+}
+
+.mouse-animation:active{
+    transform: scale(0.95);
+}
+
+
+
+
+.mouse-animation-G:hover{
+    transform:scale(1.08);
+
+    cursor: pointer;
+}
+
+.mouse-animation-G:active{
+    transform: scale(0.95);
+}
+
+
+
+// sistema de guias - estilização
+
+
+.milestone{
+    border: solid var(--color-dark-gray-3) 3px;
+}
+
+
+
+// main - onde teria os cards das tarefas:
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--color-dark-gray-3);
+    width: 550px;
+    min-height: 80px;
+}
+
+.retractive-column-header{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--color-dark-gray-1);
+    width: 100%;
+    height: 75px;
+
+}
+
+// milestone
+.milestone-container{
+    margin-bottom: 5px;
+}
+.high-priority-borderBottom{
+    border-bottom: solid var(--color-red) 2px;
+}
+.medium-priority-borderBottom{
+    border-bottom: solid var(--color-orange) 2px;
+}
+.low-priority-borderBottom{
+    border-bottom: solid var(--color-lime) 2px;
+}
+
+.side-padding-taskColumn{
+    max-width: calc(100% - 30px);
+    padding: 0 15px;
+}
+
+.milestones-title{
+    font-size: 24px;
+    width: 65%;
+
+    text-align: left;
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.priority-colorBox{
+    width: 42px;
+    height: 42px;
+    border-radius: 5px;
+}
+.high-priority-backgroundColor{
+    background-color: var(--color-red);
+}
+.medium-priority-backgroundColor{
+    background-color: var(--color-orange);
+}
+.low-priority-backgroundColor{
+    background-color: var(--color-lime);
+}
+
+
+
+
+.priority-text{
+    margin: 0 10px;
+}
+
+.totalColumnTime{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+
+    font-size: 25px;
+    color: var(--color-white);
+    font-weight: bold;
+}
+
+// outras camadas do milestone: na fila, concluídos:
+
+.expandMore-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 35px;
+    width: 27px;
+    height: 27px;
+    font-weight: bold;
+
+    transition: transform 0.08s ease-in-out;
+}
+
+
+.add-task-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 35px;
+    width: 42px;
+    height: 42px;
+
+    transition: transform 0.08s ease-in-out;
+}
+
+.three-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 35px;
+    width: 10px;
+    height: 37px;
+}
+
+.in-queue-title{
+    font-size: 24px;
+    width: 70%;
+    text-align: left;
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+// content:
+
+.task-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--color-dark-gray-1);
+
+    width: 100%;
+    height: 400px;
+}
+
+.queue-content{
+    margin-bottom: 4px;
+    height: 100%;
+}
+
+.in-queue{
+    border-bottom: solid var(--color-dark-gray-3) 4px;
+}
+
+
+.finished-content{
+    height: 100%;
+}
+
+.finished{
+    margin: 0;
+    margin-bottom: 4px;
+    // border-bottom: solid var(--color-dark-gray-3) 5px;
+}
+
+
+// task cards:
+.card-container{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--color-dark-gray-0);
+}
+
+.card-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 65px;
+    width: 100%;
+
+    border-radius: 6px;
+
+}
+
+.card-expandMore-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 27px;
+    height: 27px;
+    font-size: 35px;
+    font-weight: bold;
+
+    margin-right: 17px;
+
+
+    transition: transform 0.08s ease-in-out;
+}
+
+.card-title{
+    font-size: 20px;
+
+    text-align: center;
+}
+
+.card-three-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 17px;
+
+    font-size: 35px;
+    width: 10px;
+    height: 37px;
+}
+
+.card-info {
+    height: 100%;
+    flex: 1;
+}
+
+.card-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 35px;
+    width: 100%;
+
+    justify-self: flex-end;
+    align-self: flex-end;
+
+    border-top: solid var(--color-dark-gray-1) 5px;
+}
+
+.card-footer-info{
+    font-size: 14px;
+}
+
+.info-text{
+    margin: 10px 0;
+    font-size: 18px;
+    
+    white-space: wrap;
+    text-align: justify;
+}
+
+
+
+// estilização da barra de sroll:
+.modern-scroll::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.modern-scroll::-webkit-scrollbar-track {
+  background: var(--color-sroll-0);
+  border-radius: 6px;
+}
+
+.modern-scroll::-webkit-scrollbar-thumb {
+  background: var(--color-sroll-1);
+  border-radius: 6px;
+}
+
+.modern-scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--color-sroll-hover);
+}
+
+
+
+// main footer
+
+.main-footer{
+    background-color: var(--color-dark-gray-1);
+}
+
+.card-options{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.put-in-progress-btn{
+    border: solid var(--color-white) 1.5px;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    user-select: none;
+
+    transition: background-color 0.08s ease-in-out, background-color 0.08s ease-in-out;
+}
+
+.put-in-progress-btn:hover{
+    background-color: var(--color-sroll-0);
+    cursor: pointer;
+}
+
+.card-term{
+    font-size: 14px;
+}

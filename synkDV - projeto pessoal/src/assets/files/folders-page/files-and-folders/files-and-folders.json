@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Arquivos do GDD",
+        "children": [
+            {
+                "name": "Leveldesign"
+            },
+
+            {
+                "name": "Storytelling"
+            },
+
+            {
+                "name": "Milestones"
+            }
+        ]
+    },
+
+    {
+        "name": "Organização das tarefas",
+        "children": [
+            {
+                "name": "Tarefas de desenvolvimento",
+                "children": [
+                    {
+                        "name": "Programação"
+                    }, 
+
+                    {
+                        "name": "Artes",
+                        "children": [
+                            {
+                                "name": "Modelagem 3D"
+                            }, 
+
+                            {
+                                "name": "Texturas"
+                            }
+                        ]
+                    }
+                ]
+            },
+
+            {
+                "name": "Tarefas de testes",
+                "children": [
+                    {
+                        "name": "QA"
+                    }, 
+
+                    {
+                        "name": "Beta-test"
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,116 @@
+[
+    {
+        "title": "Título de exemplo à milestone",
+        "priority": 3,
+        "inQueueTasks": [
+            {
+                "title":"Atividade 1",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+                "term": "XX-XX-XXXX",
+                "priority": 3,
+                "responsable": "Nome do Resposável",
+                "time": "2h",
+                "image": "assets/images/placeholder.png",
+                "consultants": "Nome 1, Nome 2 e Nome 3",
+                "approvers": "Nome 1, Nome 2 e Nome 3"
+            },
+            {
+                "title":"Atividade 2",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+                "term": "XX-XX-XXXX",
+                "priority": 2,
+                "responsable": "Nome do Resposável",
+                "time": "2h",
+                "image": "assets/images/placeholder.png",
+                "consultants": "Nome 1, Nome 2 e Nome 3",
+                "approvers": "Nome 1, Nome 2 e Nome 3"
+            }
+        ],
+        "finishedTasks": [
+            {
+                "title":"Atividade 3",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+                "term": "XX-XX-XXXX",
+                "priority": 1,
+                "responsable": "Nome do Resposável",
+                "time": "2h",
+                "image": "assets/images/placeholder.png",
+                "consultants": "Nome 1, Nome 2 e Nome 3",
+                "approvers": "Nome 1, Nome 2 e Nome 3"
+            }
+        ]
+    },
+
+    {
+        "title": "Título de exemplo à milestone",
+        "priority": 2,
+        "inQueueTasks": [
+            {
+                "title":"Atividade 4",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+                "term": "XX-XX-XXXX",
+                "priority": 1,
+                "responsable": "Nome do Resposável",
+                "time": "2h",
+                "image": "assets/images/placeholder.png",
+                "consultants": "Nome 1, Nome 2 e Nome 3",
+                "approvers": "Nome 1, Nome 2 e Nome 3"
+            }
+        ],
+        "finishedTasks": [
+            {
+                "title":"Atividade 5",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+                "term": "XX-XX-XXXX",
+                "priority": 2,
+                "responsable": "Nome do Resposável",
+                "time": "2h",
+                "image": "assets/images/placeholder.png",
+                "consultants": "Nome 1, Nome 2 e Nome 3",
+                "approvers": "Nome 1, Nome 2 e Nome 3"
+            },
+            {
+                "title":"Atividade 6",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+                "term": "XX-XX-XXXX",
+                "priority": 3,
+                "responsable": "Nome do Resposável",
+                "time": "2h",
+                "image": "assets/images/placeholder.png",
+                "consultants": "Nome 1, Nome 2 e Nome 3",
+                "approvers": "Nome 1, Nome 2 e Nome 3"
+            }
+        ]
+    },
+
+    {
+        "title": "Título de exemplo à milestone",
+        "priority": 1,
+        "inQueueTasks": [
+            {
+                "title":"Atividade 7",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+                "term": "XX-XX-XXXX",
+                "priority": 3,
+                "responsable": "Nome do Resposável",
+                "time": "2h",
+                "image": "assets/images/placeholder.png",
+                "consultants": "Nome 1, Nome 2 e Nome 3",
+                "approvers": "Nome 1, Nome 2 e Nome 3"
+            }
+        ],
+        "finishedTasks": [
+            {
+                "title":"Atividade 8",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+                "term": "XX-XX-XXXX",
+                "priority": 1,
+                "responsable": "Nome do Resposável",
+                "time": "2h",
+                "image": "assets/images/placeholder.png",
+                "consultants": "Nome 1, Nome 2 e Nome 3",
+                "approvers": "Nome 1, Nome 2 e Nome 3"
+            }
+        ]
+    }
+]

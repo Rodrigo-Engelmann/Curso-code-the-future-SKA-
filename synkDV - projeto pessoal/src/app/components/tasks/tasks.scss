@@ -1,0 +1,646 @@
+.side-padding {
+    display: flex;
+    justify-content: space-between;
+    max-width: calc(100% - 80px);
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.small-side-padding {
+    max-width: calc(100% - 10px);
+    max-height: calc(100% - 10px);
+    padding: 5px;
+}
+
+
+
+.taskPage-header{
+    background-color: var(--color-dark-gray-2);
+    border-bottom: solid var(--color-dark-gray-3) 2px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 4.3rem;
+}
+
+.taskPage-info{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+}
+
+.page-root, .header-button {
+    margin: 0 20px;
+}
+
+.page-root{
+    height: 100%;
+    font-size: 20px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.header-button{
+    font-size: 20px;
+    user-select: none;
+
+    transition: transform 0.08s ease-in-out;
+}
+
+
+
+.synkdv-logo{
+    height: 48px;
+    transition: transform 0.08s ease-in-out;
+}
+
+
+.profile-picture{
+    height: 48px;
+    width: 48px;
+    border-radius: 100%;
+    border: solid var(--color-white) 2px;
+
+    margin-left: 20px;
+
+    user-select: none;
+
+    transition: transform 0.08s ease-in-out;
+}
+
+.mouse-animation:hover{
+    transform:scale(1.03);
+
+    cursor: pointer;
+}
+
+.mouse-animation:active{
+    transform: scale(0.95);
+}
+
+
+
+
+// header secundário (guias + filter + search)
+
+
+.search-header{
+    background-color: var(--color-dark-gray-1);
+    height: 4.3rem;
+
+    border-bottom: solid var(--color-dark-gray-3) 3px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-icons{
+    font-size: 30px;
+    height: 20px;
+    width: 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    transition: transform 0.08s ease-in-out;
+}
+
+
+.mouse-animation-G:hover{
+    transform:scale(1.08);
+
+    cursor: pointer;
+}
+
+.mouse-animation-G:active{
+    transform: scale(0.95);
+}
+
+.taskPage-shortcut{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.taskPages-tabIcons{
+    display: flex;
+    flex-direction: row;
+}
+
+.search-n-filter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background-color: var(--color-dark-gray-1);
+}
+
+.taskPages-tabContainer{
+    width: 100%;
+    height: 90%;
+
+    // background-color: red;
+
+
+    overflow-y: hidden;
+    overflow-x: auto;
+
+    display: flex;
+    flex-wrap: nowrap;
+
+    padding: 0 40px;
+}
+
+.taskPages-tabContainer > * {
+    flex-shrink: 0;
+}
+
+.modern-scroll > * {
+    flex-shrink: 0;
+}
+
+
+.search-icon{
+    height: 48px;
+    width: 48px;
+
+}
+
+.filter-icon{
+    height: 33px;
+    width: 44px;
+
+    margin-left: 25px;
+}
+
+
+// sistema de guias - estilização
+
+.tab-container{
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+
+    margin-right: 15px;
+}
+
+.tabs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 80px;
+    height: 40px;
+
+    border: solid var(--color-white) 2px;
+
+    user-select: none;
+    cursor: pointer;
+
+    transition: background-color 0.04s ease-in-out, background-color 0.04s ease-in-out;
+}
+
+.milestone{
+    border: solid var(--color-dark-gray-3) 10px;
+}
+
+.tabs:hover{
+    background-color: var(--color-blue-1);
+}
+
+.tabs > * {
+    padding: 20px;
+}
+
+.task-tab{
+    border-bottom-left-radius: 100vw;
+    border-top-left-radius: 100vw;
+}
+
+.bug-tab{
+    border-bottom-right-radius: 100vw;
+    border-top-right-radius: 100vw;
+}
+
+// main - onde teria os cards das tarefas:
+
+main{
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+
+    background-color: var(--color-blue-2);
+
+    max-width: calc(100% - 10px);
+    max-height: calc(100% - 20px);
+    padding: 10px 5px;
+    height: 100% !important;
+
+    overflow: auto;
+}
+
+main > * {
+    flex-shrink: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--color-dark-gray-3);
+    width: 550px;
+    min-height: 80px;
+}
+
+.retractive-column-header{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--color-dark-gray-1);
+    width: 100%;
+    height: 75px;
+
+}
+
+// milestone
+.milestone-container{
+    border-bottom: solid var(--color-red) 5px;
+    margin-bottom: 5px;
+}
+
+.side-padding-taskColumn{
+    max-width: calc(100% - 30px);
+    padding: 0 15px;
+}
+
+
+
+
+// outras camadas do milestone: na fila, concluídos:
+
+.expandMore-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 50px;
+    width: 27px;
+    height: 27px;
+    font-weight: bold;
+
+    transition: transform 0.08s ease-in-out;
+}
+
+
+.add-task-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 50px;
+    width: 42px;
+    height: 42px;
+
+    transition: transform 0.08s ease-in-out;
+}
+
+.three-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 55px;
+    width: 10px;
+    height: 37px;
+}
+
+// content:
+
+.task-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--color-dark-gray-1);
+
+    width: 100%;
+    height: 400px;
+}
+
+.queue-content{
+    margin-bottom: 10px;
+    height: 100%;
+}
+
+.in-queue{
+    border-bottom: solid var(--color-dark-gray-3) 5px;
+}
+
+
+.finished-content{
+    height: 100%;
+}
+
+.finished{
+    margin: 0;
+    border-bottom: solid var(--color-dark-gray-3) 5px;
+}
+
+
+// task cards:
+.card-container{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    min-height: 250px;
+
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--color-dark-gray-0);
+}
+
+.card-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 65px;
+    width: 100%;
+
+    border-radius: 6px;
+
+    border-bottom: solid var(--color-red) 5px;
+}
+
+.card-expandMore-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 27px;
+    height: 27px;
+    font-size: 40px;
+    font-weight: bold;
+
+    margin-right: 17px;
+
+
+    transition: transform 0.08s ease-in-out;
+}
+
+.card-title{
+    font-size: 25px;
+
+    text-align: center;
+}
+
+.card-three-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 17px;
+
+    font-size: 55px;
+    width: 10px;
+    height: 37px;
+}
+
+.card-info {
+    height: 100%;
+    flex: 1;
+}
+
+.card-footer{
+    height: 25px;
+    width: 100%;
+
+    justify-self: flex-end;
+    align-self: flex-end;
+
+    border-top: solid var(--color-dark-gray-1) 5px;
+}
+
+.info-text{
+    margin: 10px 0;
+    font-size: 30px;
+    
+    white-space: wrap;
+    text-align: justify;
+}
+
+
+
+// estilização da barra de sroll:
+.modern-scroll::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.modern-scroll::-webkit-scrollbar-track {
+  background: var(--color-sroll-0);
+  border-radius: 6px;
+}
+
+.modern-scroll::-webkit-scrollbar-thumb {
+  background: var(--color-sroll-1);
+  border-radius: 6px;
+}
+
+.modern-scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--color-sroll-hover);
+}
+
+
+
+// main footer
+
+.main-footer{
+    background-color: var(--color-dark-gray-1);
+}
+
+
+// 
+// app-card{
+//     height: 100% !important;
+// }
+
+
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+// input do search sys
+.searchInput-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#search-input-line{
+    position: absolute;
+    top: 130px;
+    right: 43px;
+    background-color: white;
+    border-radius: 100vw;
+    height: 2.5px;
+
+
+}
+
+.searchTransition{
+    transition-duration: 0.2s;
+}
+
+// aqui vão duas classes que eu criei pelo html mesmo, daí a ideia é que elas transicionem entre o input aberto e fechado
+.space-open{
+    margin-left: 25px;
+    width: 380px;
+}
+.space-close{
+    margin-left: 0px;
+    width: 0px;
+}
+
+.line-open{
+    width: 442px;
+}
+.line-close{
+    width: 0px;
+}
+
+
+
+#search-input{
+    opacity: 0%;
+    position: absolute;
+    top: 82px;
+    right: 107px;
+    width: 390px;
+}
+
+#search-label, #search-input-text, #search-input{
+    display: none;
+}
+
+
+
+// estilização do input do search (é entre todos os input texts, mas como não há outros não é um grande problema)
+
+::ng-deep .mat-mdc-text-field-wrapper {
+    background-color: transparent;
+    border-radius: 40px !important;
+    border: none;
+}
+
+
+::ng-deep .mat-mdc-form-field-focus-overlay {
+    background-color: rgb(255, 0, 0) !important;
+}
+
+
+
+
+::ng-deep .mat-mdc-text-field-wrapper {
+    background-color: transparent;
+}
+
+
+// para alterar a cor do preview "email" e "senha" pra algo mais claro
+mat-label{
+    color: var(--color-white) !important;
+    font-size: 20px;
+}
+
+// remove a cor diferente lá daquela barra que exibe o local de edição que você está dentro do texto (aquela barra que fica piscando)
+::ng-deep .mat-mdc-input-element {
+  caret-color: auto !important;
+  color: var(--color-light-gray-1) !important;
+}
+
+
+::ng-deep .mdc-floating-label--required:not(.mdc-floating-label--hide-required-marker)::after {
+  content: "" !important;
+}
+
+
+// ::ng-deep .mdc-linear-progress__bar-inner {
+//     border-top-width: 20px !important;
+// }
+
+
+// footer
+
+.create-column-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 300px;
+}
+
+.create-column-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 200px;
+
+    background-color: var(--color-dark-gray-1);
+    border: dashed var(--color-dark-gray-3) 3px;
+    padding: 40px;
+    cursor: pointer;
+
+    transition: transform 1.12s ease-in-out, transform 1.12s ease-in-out;
+}
+
+.create-column-group:hover:hover {
+    transform: scale(1.04);
+
+    .create-column-icon {
+        transform: rotate(360deg) scale(1.2);
+    }
+}
+
+
+.create-column-icon{
+    font-size: 130px;
+    width: auto;
+    height: auto;
+
+    transition: transform 1s ease;
+}
+
+
+::ng-deep .mdc-text-field--outlined .mdc-notched-outline__leading,
+::ng-deep .mdc-text-field--outlined .mdc-notched-outline__notch,
+::ng-deep .mdc-text-field--outlined .mdc-notched-outline__trailing {
+    border: none !important;
+}

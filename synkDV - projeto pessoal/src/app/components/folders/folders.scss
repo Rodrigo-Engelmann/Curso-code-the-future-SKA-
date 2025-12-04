@@ -1,0 +1,548 @@
+.side-padding {
+    display: flex;
+    justify-content: space-between;
+    max-width: calc(100% - 80px);
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.side-padding-areas {
+    padding: 0 15px;
+}
+
+.small-side-padding {
+    max-width: calc(100% - 10px);
+    max-height: calc(100% - 10px);
+    padding: 5px;
+}
+
+
+
+.taskPage-header{
+    background-color: var(--color-dark-gray-2);
+    border-bottom: solid var(--color-dark-gray-3) 2px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 4.3rem;
+}
+
+.taskPage-info{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+}
+
+
+.synkdv-logo{
+    height: 48px;
+    transition: transform 0.08s ease-in-out;
+}
+
+
+.profile-picture{
+    height: 48px;
+    width: 48px;
+    border-radius: 100%;
+    border: solid var(--color-white) 2px;
+
+    margin-left: 20px;
+
+    user-select: none;
+
+    transition: transform 0.08s ease-in-out;
+}
+
+.mouse-animation:hover{
+    transform:scale(1.03);
+
+    cursor: pointer;
+}
+
+.mouse-animation:active{
+    transform: scale(0.95);
+}
+
+
+.horizontal-threeDots{
+    font-size: 24px;
+}
+
+// sidemenu:
+
+.menu-n-main-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: calc(100% - 4.3rem);
+}
+
+.side-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    width: 350px;
+    background-color: var(--color-dark-gray-2);
+
+    overflow-y: auto;
+
+    border-right: solid var(--color-dark-gray-3) 2px;
+}
+
+.games{
+    width: 100%;
+    height: auto;
+}
+
+.game-divisors{
+    display: block;
+
+    width: 100%;
+    margin-top: 20px;
+    
+    border: solid var(--color-white) 1px;
+    border-radius: 10px;
+}
+
+
+.area-options{
+    font-size: 14px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+::ng-deep .mat-expansion-panel {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+::ng-deep mat-accordion {
+    width: 100%;
+}
+
+mat-panel-title{
+    display: flex;
+    flex-direction: column;
+}
+
+.mat-expansion-panel-header, ::ng-deep .mat-expansion-panel-body{
+    padding: 0 !important;
+}
+
+.game-texts{
+    color: var(--color-white);
+    margin: 0;
+
+    user-select: none;
+}
+
+::ng-deep svg {
+    width: 40px !important;
+}
+
+.area-options-conainter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.checklist-icon{
+    font-size: 20px;
+    height: auto;
+    width: auto;
+    margin: 0 10px;
+
+    cursor: pointer;
+    opacity: 0%;
+    color: var(--color-light-gray-1);
+}
+
+// sistema de hover
+
+.area-options-conainter:hover{
+    background-color: var(--color-hover-folder);
+    border-radius: 2.2px;
+
+    .checklist-icon{
+        opacity: 100%;
+    }
+}
+
+.checklist-icon:hover{
+    font-weight: bold;
+}
+
+// game: título
+
+.title-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 10px 0;
+    width: 100%;
+}
+
+.game-title{
+    font-size: 18px;
+}
+
+.gameTitle-icons{
+    color: var(--color-white);
+}
+
+
+// scroll personalizado:
+
+.modern-scroll::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+
+.modern-scroll::-webkit-scrollbar-track {
+    background: var(--color-sroll-0);
+    border-radius: 6px;
+}
+
+.modern-scroll::-webkit-scrollbar-thumb {
+    background: var(--color-sroll-1);
+    border-radius: 6px;
+}
+
+.modern-scroll::-webkit-scrollbar-thumb:hover {
+    background: var(--color-sroll-hover);
+}
+
+
+//main / elementos da esquerda da tela:
+
+.right-content-container{
+    background-color: var(--color-blue-2);
+    width: 100%;
+    height: 100%;
+
+}
+
+.right-content{
+    display: flex;
+    flex-direction: column;
+    width: 97.5%;
+    height: 100%;
+}
+
+.main-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5px 0px 2.5px 15px;
+
+    height: 80px;
+}
+
+main{
+    background-color: var(--color-dark-gray-1);
+    border-top: solid var(--color-dark-gray-3) 2px;
+    border-right: solid var(--color-dark-gray-3) 2px;
+    height: 100%;
+    width: 78vw;
+
+    border-radius: 5px;
+    padding: 30px;
+
+    overflow: auto;
+}
+
+
+
+
+// input search
+.search-input-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    height: 57%;
+    width: 550px;
+    background-color: var(--color-dark-gray-3);
+
+    // margin-right: 200px;
+
+    border-radius: 3px;
+    border-bottom: solid var(--color-white) 2px;
+}
+
+
+::ng-deep .mat-mdc-text-field-wrapper {
+    margin-top: 20px;
+    display: flex !important;
+    height: 50px !important;
+    width: 100%;
+}
+
+::ng-deep .search-label{
+    color: var(--color-white) !important;
+}
+
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-floating-label{
+    color: var(--color-white) !important;
+}
+
+::ng-deep .mdc-text-field--outlined {
+    outline: none !important;
+    border: none !important;
+}
+
+.search-label{
+    font-size: 18px;
+}
+
+.main-header-icon{
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+}
+
+
+::ng-deep .mdc-text-field--outlined .mdc-notched-outline__leading,
+::ng-deep .mdc-text-field--outlined .mdc-notched-outline__notch,
+::ng-deep .mdc-text-field--outlined .mdc-notched-outline__trailing {
+    border: none !important;
+}
+
+.search-input{
+    width: 100%;
+}
+
+
+.search-input-text {
+  border: none;
+  background: none;
+  padding: 0;
+  outline: none;
+  font: inherit;
+
+  color: var(--color-light-gray) !important;
+  font-size: 14px !important;
+}
+
+
+.search-input-text {
+  caret-color: var(--color-light-gray) !important;
+}
+
+// add root folder: 
+
+.add-root-folder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--color-dark-gray-3);
+    border-bottom: solid var(--color-white) 2px;
+    border-radius: 3px;
+    padding: 10px 20px;
+
+    width: auto;
+    height: 57%;
+
+    transition: transform 0.08s ease-in-out;
+}
+
+.add-root-folder-text{
+    font-size: 18px;
+    margin-left: 10px;
+
+    user-select: none;
+}
+
+
+
+// sistema de árvore de arquivos: 
+.mat-tree {
+    background-color: transparent !important;
+}
+
+.mat-tree-node {
+    color: var(--color-white);
+    font-size: 20px;
+    min-width: 97%;
+    width: max-content;
+    cursor: pointer;
+    border-radius: 2.2px;
+
+    padding-right: 40px;
+}
+
+
+.file-three-dots{
+    opacity: 0%;
+    // position: absolute;
+    // right: 45px;
+    margin-left: 10px;
+
+    transition: opacity 0.1s ease;
+}
+
+
+
+// .folder-icon{
+
+// }
+
+.mat-mdc-icon-button{
+    width: auto;
+}
+
+.file-icon{
+    margin-left: 30px;
+    width: auto;
+    height: auto;
+}
+
+.file-name:hover{
+    text-decoration: underline;
+}
+
+.file-container:hover{
+    text-decoration: underline;
+
+    .file-three-dots{
+        opacity: 100%;
+    }
+}
+
+.folder-container{
+    transition: background-color 0.04s ease;
+}
+
+
+.folder-hover-options{
+    opacity: 0%;
+    transition: opacity 0.05s ease;
+}
+
+.folder-container:hover{
+    background-color: var(--color-hover-folder);
+
+    .folder-hover-options{
+        opacity: 100%;
+    }
+}
+
+
+.folder-add-icon{
+    margin-left: 50px;
+}
+
+
+
+.groups-icon{
+    margin-right: 20px;
+}
+
+
+
+
+.popupElements {
+    display: none;
+}
+
+.popupElements.active {
+    display: block;
+}
+
+.addTeam-icon{
+    color: var(--color-black);
+
+    transition: transform 0.1s ease-in-out;
+}
+
+.inputText-decoration{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-light-gray);
+    border-radius: 7px;
+    height:70px
+}
+
+.teamList{
+    color: var(--color-black);
+    margin-bottom: 10px;
+}
+
+.teamList-noDivisor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.teamList-icons{
+    color: var(--color-light-gray-1);
+
+    font-size: 20px;
+    width: auto;
+    height: auto;
+
+    cursor: pointer;
+}
+
+.teamList-icons:hover{
+    color: var(--color-gray);
+}
+
+.delete-team{
+    right: 20px;
+}
+
+.team-members{
+    right: 45px;
+}
+
+
+.teamList-divisor{
+    display: block;
+    width: 100%;
+    border: dashed var(--color-gray) 0.2px;
+}
+
+.noTeamsErrorMessage{
+    color: var(--color-black);
+}
+
+.member-profilePicture{
+    width: 40px;
+    height: 40px;
+    border-radius: 100vw;
+    margin-left: 1vw;
+}
+
+.member-name{
+    text-align: center;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    font-size: 14px !important;
+}
+
+.container-memberInfo{
+    padding: 15px 0;
+}
+
+.add-members-title{
+    text-align: center;
+}
+
+.container-teamList{
+    overflow-y: auto;
+    overflow-x:hidden;
+    max-height: 80vh;
+}

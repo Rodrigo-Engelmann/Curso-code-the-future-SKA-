@@ -1,0 +1,142 @@
+
+<!-- parte principal, exerce função de container para as colunas de tarefas (milestones) -->
+
+<section class="milestone">
+    <!-- milestone -->
+    <div 
+        class=
+            "retractive-column-header 
+            milestone-container 
+            side-padding-taskColumn"
+        [ngClass]="
+            {
+                'high-priority-borderBottom': milestone.priority === 3,
+                'medium-priority-borderBottom': milestone.priority === 2,
+                'low-priority-borderBottom': milestone.priority === 1
+            }"
+        >
+        <p class="milestones-title">{{ milestone.title }}</p>
+        <p class="priority-text">  
+            {{ 
+                milestone.priority === 3 ? 'Alta prioridade' : 
+                milestone.priority === 2 ? 'Média prioridade' : 
+                'Baixa prioridade' 
+            }} 
+        </p>
+
+        <div 
+            class="priority-colorBox" 
+            [ngClass]="
+            {
+                'high-priority-backgroundColor': milestone.priority === 3,
+                'medium-priority-backgroundColor': milestone.priority === 2,
+                'low-priority-backgroundColor': milestone.priority === 1
+            }"
+        >
+            <p class="totalColumnTime">1d</p>
+        </div>
+
+    </div>
+
+    <!-- na fila -->
+    <div class="in-queue retractive-column-header side-padding-taskColumn">
+        <mat-icon class="expandMore-icon mouse-animation-G">expand_more</mat-icon>
+        <p class="in-queue-title">Na Fila</p>
+        <mat-icon class="add-task-btn mouse-animation-G">add_circle_outline</mat-icon>
+        <mat-icon class="three-dots mouse-animation-G">more_vert</mat-icon>
+    </div>
+    <!-- conteúdo: na fila -->
+    <div class="queue-content task-content side-padding-taskColumn">
+
+
+        <div class="card-container" *ngFor="let task of milestone.inQueueTasks">
+
+            <header 
+                class=
+                    "card-header 
+                    side-padding-taskColumn"
+                [ngClass]="
+                {
+                    'high-priority-borderBottom': milestone.priority === 3,
+                    'medium-priority-borderBottom': milestone.priority === 2,
+                    'low-priority-borderBottom': milestone.priority === 1
+                }"
+            >
+                <mat-icon class="card-expandMore-icon mouse-animation-G">expand_more</mat-icon>
+                <p class="card-title side-padding-taskColumn">{{ task.title }}</p>
+                <mat-icon class="card-three-dots mouse-animation-G side-padding-taskColumn">more_vert</mat-icon>
+            </header>
+
+            <p class="info-text side-padding-taskColumn">
+                {{ task.description }}
+            </p>
+
+            <div class="card-options side-padding-taskColumn">
+                <div class="put-in-progress-btn">
+                    Colocar em progresso
+                </div>
+
+                <p class="card-term">Prazo: {{ task.term }}</p>
+            </div>
+            <footer class="card-footer side-padding-taskColumn">
+                <p class="card-footer-info">{{task.responsable}}</p>
+                <p class="card-footer-info">{{task.time}}</p>
+            </footer>
+        </div>
+
+
+    </div>
+
+    <!-- concluído -->
+    <div class="finished retractive-column-header side-padding-taskColumn">
+        <mat-icon class="expandMore-icon mouse-animation-G">expand_more</mat-icon>
+        <p class="in-queue-title">Concluído</p>
+        <mat-icon class="add-task-btn mouse-animation-G">add_circle_outline</mat-icon>
+        <mat-icon class="three-dots mouse-animation-G">more_vert</mat-icon>
+    </div>
+    <!-- conteúdo: concluído -->
+    <div class="finished-content task-content side-padding-taskColumn">
+        
+
+
+        <div class="card-container" *ngFor="let task of milestone.finishedTasks">
+
+            <header 
+                class=
+                    "card-header 
+                    side-padding-taskColumn"
+                [ngClass]="
+                    {
+                        'high-priority-borderBottom': milestone.priority === 3,
+                        'medium-priority-borderBottom': milestone.priority === 2,
+                        'low-priority-borderBottom': milestone.priority === 1
+                    }"
+                >
+                <mat-icon class="card-expandMore-icon mouse-animation-G">expand_more</mat-icon>
+                <p class="card-title side-padding-taskColumn">{{ task.title }}</p>
+                <mat-icon class="card-three-dots mouse-animation-G side-padding-taskColumn">more_vert</mat-icon>
+            </header>
+
+            <p class="info-text side-padding-taskColumn">
+                {{task.description}}
+            </p>
+
+            <div class="card-options side-padding-taskColumn">
+                <div class="put-in-progress-btn">
+                    Colocar em progresso
+                </div>
+
+                <p class="card-term">Prazo: {{ task.term }}</p>
+            </div>
+            <footer class="card-footer side-padding-taskColumn">
+                <p class="card-footer-info">{{task.responsable}}</p>
+                <p class="card-footer-info">{{task.time}}</p>
+            </footer>
+        </div>
+
+
+
+
+    </div>
+</section>
+
