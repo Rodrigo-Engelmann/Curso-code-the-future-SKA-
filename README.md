@@ -26,5 +26,10 @@ Eu usei o nome 10.9.4 (dependendo do caso pode fazer as APIs utilizadas para o b
     2 - ao baixar o workbench e criar uma database, agora, basta somente entrar no git bash na pasta raíz do projeto e rodar os seguintes comandos:
         - npm install
         - npm run start:dev
-        
+
+
+O QUE TEM DE BACKEND NO PROJETO?
+ - eu tive tempo somente para fazer o sistema do usuário (cadastro, login, edição de prifle, logout, deletar conta) e o sistema de times (ícone ao lado da foto de perfil na página de arquivos: criar time, deletar time, visualizar membros, remover membros, etc.)
+   - O resto eu fiz utilizando .json.
+
 Caso estejam com problemas e/ou dúvidas ao rodar o projeto, podem me mandar mensagem pelo Teams.
