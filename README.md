@@ -3,8 +3,6 @@ Tarefas e projetos desenvolvidos durante o curso [Code The Future - SKA Senac](h
 
 Inclui figmas, códigos do projeto final e atividades realizadas em aula.
 
-AVISO: os códigos Angular são pesados, dessa forma eu sou obrigado a colocar os arquivos, não o zip, caso atrapalhe me mande mensagem pelo Teams e eu compartilho o projeto compactado
-
 
 SOBRE O PROJETO SYNKDV - dependências
 Eu usei o nome 10.9.4 (dependendo do caso pode fazer as APIs utilizadas para o backend não funcionarem corretamente)
