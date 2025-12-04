@@ -4,7 +4,8 @@ Tarefas e projetos desenvolvidos durante o curso [Code The Future - SKA Senac](h
 Inclui figmas, códigos do projeto final e atividades realizadas em aula.
 
 
-SOBRE O PROJETO SYNKDV - dependências
+
+SOBRE O PROJETO SYNKDV - dependências:
 Eu usei o nome 10.9.4 (dependendo do caso pode fazer as APIs utilizadas para o backend não funcionarem corretamente)
 
  - COMO RODAR O FRONTEND:
